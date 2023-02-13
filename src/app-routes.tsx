@@ -9,25 +9,16 @@ import TablePage2 from './view/TablePage2';
 export const initRoutes = (): RouteObject[] => {
   return [
     {
-      path: '/login',
-      element: <Login />,
+      path: "/",
+      element: <HomePage />,
     },
     {
-      element: <AppLayout />,
-      children: [
-        {
-          path: "/",
-          element: <HomePage />,
-        },
-        {
-          path: "/table1",
-          element: <TablePage1 />,
-        },
-        {
-          path: "/table2",
-          element: <TablePage2 />,
-        },
-      ],
+      path: "/pokemon/:id",
+      element: <TablePage1 />,
+    },
+    {
+      path: "/table2",
+      element: <TablePage2 />,
     },
     {
       path: "*",
