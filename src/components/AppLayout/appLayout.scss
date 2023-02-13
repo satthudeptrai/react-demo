@@ -1,0 +1,17 @@
+#app-layout {
+  padding: 10px;
+  display: flex;
+  #container {
+    padding: 10px;
+    background-color: red;
+    width: 100%;
+  }
+  #menu-left {
+    padding: 10px;
+    width: 300px;
+    height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
