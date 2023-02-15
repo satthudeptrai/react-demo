@@ -1,0 +1,128 @@
+.my-bag {
+  .bag-btn {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 1000;
+    cursor: pointer;
+    img {
+      height: 40px;
+    }
+    .pokemon-count {
+      width: 25px;
+      height: 25px;
+      font-size: 20;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: red;
+      color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -5px;
+      left: -5px;
+    }
+  }
+  .popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .popup-container {
+      position: relative;
+      width: 60%;
+      height: 600px;
+      background-color: #dfdfdf;
+      border-radius: 10px;
+      box-shadow: 1px 1px 3px 0px #000;
+      .close-btn {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        border-color: #fff;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        z-index: 10000;
+      }
+      .list-my-pokemon {
+        overflow-y: auto;
+        padding: 10px;
+        height: 580px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 50px;
+        .my-pokemon {
+          display: flex;
+          align-items: center;
+          height: 50px;
+          &__img {
+            height: 30px;
+            width: 30px;
+            img {
+              height: 30px;
+              width: 30px;
+              animation: shrugs 1s infinite;
+            }
+          }
+          &__name {
+            .nick {
+              text-transform: capitalize;
+              width: 180px;
+              padding: 3px 4px;
+            }
+            input {
+              width: 180px;
+            }
+          }
+          &__btn {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  .popup-confirm {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container {
+      background-color: #fff;
+      box-shadow: 1px 1px 3px 0 #000;
+      width: 400px;
+      border-radius: 3px;
+      padding: 10px;
+      .text {
+        font-size: 20px;
+      }
+      .btn-group {
+        text-align: right;
+        .btn {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  @keyframes shrugs {
+    0% {
+      transform: scaleY(1);  
+    }
+    50% {
+      transform: scaleY(1.2); 
+    }
+    100% {
+      transform: scaleY(1);  
+    }
+  }
+}

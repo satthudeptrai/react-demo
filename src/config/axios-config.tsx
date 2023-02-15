@@ -1,4 +1,7 @@
 import axios from 'axios';
+import { createBrowserHistory } from "history";
+
+const history = createBrowserHistory();
 
 export const setupAxios = () => {
   axios.defaults.baseURL = `https://pokeapi.co/api/v2`;
@@ -19,8 +22,8 @@ export const setupAxios = () => {
     // Làm gì đó với dữ liệu response
     return response;
   }, function (error) {
-    if (error?.response?.status === 401) {
-
+    if (error?.response?.status !== 200) {
+      history.push('/error');
     }
     // Bất kì mã trạng thái nào lọt ra ngoài tầm 2xx đều khiến hàm này được trigger\
     // Làm gì đó với lỗi response

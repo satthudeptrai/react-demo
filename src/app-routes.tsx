@@ -1,10 +1,8 @@
 import { RouteObject } from 'react-router';
-import AppLayout from './components/AppLayout';
 import HomePage from './view/HomePage';
-import Login from './view/Login.tsx';
 import NoPage from './view/NoPage';
-import TablePage1 from './view/TablePage1';
-import TablePage2 from './view/TablePage2';
+import PokemonDetail from './view/PokemonDetail';
+import ServerError from './view/ServerError';
 
 export const initRoutes = (): RouteObject[] => {
   return [
@@ -14,11 +12,11 @@ export const initRoutes = (): RouteObject[] => {
     },
     {
       path: "/pokemon/:id",
-      element: <TablePage1 />,
+      element: <PokemonDetail />,
     },
     {
-      path: "/table2",
-      element: <TablePage2 />,
+      path: "/error",
+      element: <ServerError />,
     },
     {
       path: "*",

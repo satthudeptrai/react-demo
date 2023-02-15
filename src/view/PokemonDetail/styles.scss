@@ -1,0 +1,146 @@
+.pokemon-detail {
+  height: 100vh;
+  .btn-back {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-size: 30px;
+    padding: 14px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  .container {
+    padding: 10px;
+    display: flex;
+    .card-img {
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 1px 1px 4px 1px #5a5a5a;
+      margin-bottom: 10px;
+      width: 350px;
+      height: 350px;
+      background-color: #fff;;
+      margin-right: 20px;
+      .catch-btn {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        transition: transform 0.3s;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      .pokemon-img {
+        width: 350px;
+        height: 350px;
+        filter: drop-shadow(0 0 10px);
+      }
+    }
+    .info {
+      background-color: #fff;
+      max-height: calc(100vh - 122px);
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+      .title {
+        font-size: 30px;
+        font-weight: 900;
+        color: #5a5a5a;
+      }
+      .type {
+        border-bottom: dashed 1px #5a5a5a;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        .type-item {
+          padding: 3px 8px;
+          display: inline-block;
+          border-radius: 12px;
+          margin-top: 3px;
+          margin-right: 5px;
+          cursor: pointer;
+        }
+      }
+      .abilitie {
+        border-bottom: dashed 1px #5a5a5a;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        .abilitie-item {
+          font-size: 20px;
+          font-weight: 600;
+          color: red;
+        }
+      }
+      .move {
+        border-bottom: dashed 1px #5a5a5a;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        .move-item {
+          display: inline-block;
+          padding: 3px 8px;
+          border: solid 1px #0000007d;
+          border-radius: 14px;
+          margin-right: 5px;
+          margin-bottom: 5px;
+          cursor: pointer;
+        }
+      }
+      &__group-bmi {
+        border-bottom: dashed 1px #5a5a5a;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        .bmi {
+          font-size: 18px;
+          font-weight: 900;
+          .title-bmi {
+            color: #5a5a5a;
+          }
+        }
+      }
+      &__group-stats {
+        .stats {
+          margin-bottom: 5px;
+          .title-stats {
+            margin-bottom: 3px;
+            font-weight: 600;
+          }
+          .stat-bar {
+            height: 15px;
+            width: 100px;
+            border-radius: 8px;
+            &.hp {
+              background-color: #00ff0e;
+            }
+            &.attack {
+              background-color: #ff0000;
+            }
+            &.defense {
+              background-color: #ff9400;
+            }
+            &.s-attack {
+              background-color: #0088f5;
+            }
+            &.s-defense {
+              background-color: #673ab7;
+            }
+            &.speed {
+              background-color: #cddc39;
+            }
+          }
+        }
+      }
+    }
+  }
+}

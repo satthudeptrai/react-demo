@@ -1,0 +1,25 @@
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .imgError {
+    margin: auto;
+    height: 80vh;
+  }
+  .btn-back-home {
+    margin: auto;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    background-color: #3ebbf15c;
+    border-radius: 10px;
+    border: solid 1px #3ebbf15c;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 0 #000;
+  }
+}
