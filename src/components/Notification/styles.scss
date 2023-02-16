@@ -1,0 +1,28 @@
+.notification {
+  position: fixed;
+  left: 5px;
+  bottom: 5px;
+  padding: 15px 30px 15px 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px 0 #000;
+  background-color: #f00;
+  color: #fff;
+  animation: up 2s;
+  z-index: 9999;
+  opacity: 0;
+}
+@keyframes up {
+  0% {
+    bottom: -48px;
+    opacity: 1;
+  }
+  80% {
+    bottom: 5px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 5px;
+    opacity: 0;
+  }
+}

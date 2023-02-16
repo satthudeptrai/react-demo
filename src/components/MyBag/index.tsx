@@ -19,31 +19,35 @@ const MyBag = () => {
     return listPokemon.map((item:any, index:number) => {
       return(
         <div className="my-pokemon" key={index}>
-          <div className="my-pokemon__img">
-            <img src={item.img} alt="" />
+          <div className="my-pokemon__group-name">
+            <div className="img-pokemon">
+              <img src={item.img} alt="" />
+            </div>
+            <div className="name-pokemon">
+              {indexChange !== index ? (
+                <div className="nick">{item.nickName}</div>
+              ):(
+                <div>
+                  <input type="text" value={nick} maxLength={16} onChange={(e) => setNick(e.target.value)} />
+                </div>
+              )
+              }
+            </div>
           </div>
-          <div className="my-pokemon__name">
+          <div className="my-pokemon__group-btn">
             {indexChange !== index ? (
-              <div className="nick">{item.nickName}</div>
+              <div>
+                <button className="btn" disabled={indexChange !== -1} onClick={() => rename(index, item.nickName)}>Rename</button>
+                <button className="btn" disabled={indexChange !== -1} onClick={() => release(index)}>Release</button>
+              </div>
             ):(
               <div>
-                <input type="text" value={nick} onChange={(e) => setNick(e.target.value)} />
+                <button className="btn" onClick={acceptRename}>Accept</button>
+                <button className="btn" onClick={cancelRename}>Cancel</button>
               </div>
             )
             }
           </div>
-          {indexChange !== index ? (
-            <div>
-              <button className="my-pokemon__btn" onClick={() => rename(index, item.nickName)}>Rename</button>
-              <button className="my-pokemon__btn" onClick={() => release(index)}>Release</button>
-            </div>
-          ):(
-            <div>
-              <button className="my-pokemon__btn" onClick={acceptRename}>Accept</button>
-              <button className="my-pokemon__btn" onClick={cancelRename}>Cancel</button>
-            </div>
-          )
-          }
         </div>
       )
     })
@@ -118,7 +122,7 @@ const MyBag = () => {
         <div className="popup-confirm">
           <div className="popup-confirm__container">
             <div className="text">
-              Do you want to save your changes?
+              <div className='icon-custom'>?</div> Do you want to save your changes?
             </div>
             <div className="btn-group">
               <button className="btn" onClick={yesConfirm}>Yes</button>

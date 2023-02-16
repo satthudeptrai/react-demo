@@ -57,7 +57,7 @@ const pokemon = createSlice({
   initialState: {
     page: 0,
     pageMax: 1,
-    loading: false,
+    loading: true,
     list: []
   },
   reducers: {
