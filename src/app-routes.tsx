@@ -7,19 +7,19 @@ import ServerError from './view/ServerError';
 export const initRoutes = (): RouteObject[] => {
   return [
     {
-      path: "/",
+      path: "/react-demo",
       element: <HomePage />,
     },
     {
-      path: "/pokemon/:id",
+      path: "/react-demo/pokemon/:id",
       element: <PokemonDetail />,
     },
     {
-      path: "/error",
+      path: "/react-demo/error",
       element: <ServerError />,
     },
     {
-      path: "*",
+      path: "/react-demo/*",
       element: <NoPage />,
     },
   ];

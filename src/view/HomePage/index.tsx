@@ -59,7 +59,7 @@ const HomePage = () => {
             value={pageInput}
             onChange={(e) => {setPageInput(e.target.value)}}
           />
-          <button className='btn' onClick={() => {setSearchParams({page: pageInput})}}>Go</button>
+          <button className='btn' disabled={!pageInput || Number(pageInput) <= 0} onClick={() => {setSearchParams({page: pageInput})}}>Go</button>
         </div>
         <div className="slide">
           <img src={require("../../assets/img/slider-img.png")} />
