@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import CardPokemon from './CardPokemon';
+import CardPokemon from './CardPokemon1';
 import { getListApi, setPageRedux } from './sliceToolKit';
 import Loading from '../../components/Loading';
 import MyBag from '../../components/MyBag';

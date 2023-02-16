@@ -36,7 +36,7 @@
     background-color: #0009;
     .popup-container {
       position: relative;
-      width: 60%;
+      width: 1300px;
       height: 600px;
       background-color: #dfdfdf;
       border-radius: 10px;
@@ -52,63 +52,77 @@
         cursor: pointer;
         z-index: 10000;
       }
+      .no-pokemon {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+      }
       .list-my-pokemon {
         overflow-y: auto;
         padding: 10px;
         height: 580px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 75px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 100px;
         gap: 10px;
         .my-pokemon {
-          padding: 4px;
+          padding: 5px;
           border: solid 1px #fff;
           border-radius: 10px;
           background-color: #fff;
           box-shadow: 1px 1px 3px 0 #000;
-          &__group-name {
+          position: relative;
+          background-size: 150px 150px;
+          background-repeat: no-repeat;
+          background-position: right -26px;
+          .release-btn {
             display: flex;
+            justify-content: center;
             align-items: center;
-            border: solid 1px #dfdfdf;
-            border-radius: 20px;
-            padding: 3px;
-            .img-pokemon {
-              height: 25px;
-              width: 25px;
-              margin-right: 5px;
-              img {
-                height: 25px;
-                width: 25px;
-                animation: shrugs 1s infinite;
-              }
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            font-weight: 900;
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            right: 5px;
+            cursor: pointer;
+          }
+          .name-pokemon {
+            height: 27px;
+            .nick {
+              text-transform: capitalize;
+              width: 180px;
+              padding: 3px 4px;
+              font-size: 18px;
+              font-weight: 600;
+              white-space: nowrap;
             }
-            .name-pokemon {
-              .nick {
-                text-transform: capitalize;
-                width: 180px;
-                padding: 3px 4px;
-                font-size: 18px;
-                font-weight: 600;
-                white-space: nowrap;
-              }
-              input {
-                width: 280px;
-                border: none;
-                border-bottom: solid 1px #dfdfdf;
-                font-size: 18px;
-                &:focus {
-                  outline: none;
-                  border-bottom-color: #000;
-                }
+            input {
+              width: 510px;
+              border: none;
+              border-bottom: solid 1px #dfdfdf;
+              font-size: 18px;
+              background-color: transparent;
+              &:focus {
+                outline: none;
+                border-bottom-color: #000;
               }
             }
           }
           &__group-btn {
             display: flex;
-            justify-content: flex-end;
-            margin-top: 5px;
+            margin-top: 30px;
             .btn {
-              margin-left: 5px;
+              margin-left: 15px;
+              border: none;
+              background: #2196f3;
+              color: #fff;
+              box-shadow: 0px -3px 0 0 #2196f3, 3px 0px 0 0 #2196f3, 0px 3px 0 0 #2196f3, -3px 0px 0 0 #2196f3;
             }
           }
         }

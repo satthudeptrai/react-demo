@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "author": "anhdeptrai",
-  "homepage": "https://satthudeptrai.github.io/react-demo",
   "dependencies": {
     "@headlessui/react": "^1.7.7",
     "@heroicons/react": "^2.0.13",

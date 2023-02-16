@@ -92,9 +92,9 @@ const pokemonDetail = () => {
             <div className="title">
               What is nickname your Pokemon?
             </div>
-            <input type="text" value={nick} maxLength={16} onChange={(e) => {setNick(e.target.value)}} />
+            <input type="text" value={nick} maxLength={30} onChange={(e) => {setNick(e.target.value)}} />
             <div className="btn-group">
-              <button className="btn" onClick={setNickname}>Ok</button>
+              <button className="btn" onClick={setNickname}>Save</button>
             </div>
           </div>
         </div>

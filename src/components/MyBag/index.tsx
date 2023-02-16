@@ -18,27 +18,22 @@ const MyBag = () => {
   const renderListPokemon = () => {
     return listPokemon.map((item:any, index:number) => {
       return(
-        <div className="my-pokemon" key={index}>
-          <div className="my-pokemon__group-name">
-            <div className="img-pokemon">
-              <img src={item.img} alt="" />
-            </div>
-            <div className="name-pokemon">
-              {indexChange !== index ? (
-                <div className="nick">{item.nickName}</div>
-              ):(
-                <div>
-                  <input type="text" value={nick} maxLength={16} onChange={(e) => setNick(e.target.value)} />
-                </div>
-              )
-              }
-            </div>
+        <div className="my-pokemon" style={{backgroundImage: `url(${item.img})`}} key={index}>
+          <button className="release-btn" disabled={indexChange !== -1} onClick={() => release(index)}>X</button>
+          <div className="name-pokemon">
+            {indexChange !== index ? (
+              <div className="nick">{item.nickName}</div>
+            ):(
+              <div>
+                <input type="text" value={nick} maxLength={30} onChange={(e) => setNick(e.target.value)} />
+              </div>
+            )
+            }
           </div>
           <div className="my-pokemon__group-btn">
             {indexChange !== index ? (
               <div>
                 <button className="btn" disabled={indexChange !== -1} onClick={() => rename(index, item.nickName)}>Rename</button>
-                <button className="btn" disabled={indexChange !== -1} onClick={() => release(index)}>Release</button>
               </div>
             ):(
               <div>
@@ -112,9 +107,15 @@ const MyBag = () => {
         <div className="popup">
           <div className="popup-container">
             <button className="close-btn" onClick={closePopup}>X</button>
-            <div className="list-my-pokemon">
-              {renderListPokemon()}
-            </div>
+            {listPokemon.length > 0 ? (
+              <div className="list-my-pokemon">
+                {renderListPokemon()}
+              </div>
+            ): (
+              <div className="no-pokemon">
+                You haven't caught any pokemon
+              </div>
+            )}
           </div>
         </div>
       )}
