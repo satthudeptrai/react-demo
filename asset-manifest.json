@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/react-demo/static/css/main.b72a51cc.css",
-    "main.js": "/react-demo/static/js/main.fe06588d.js",
-    "static/js/787.28cb0dcd.chunk.js": "/react-demo/static/js/787.28cb0dcd.chunk.js",
-    "static/media/poke-throw.gif": "/react-demo/static/media/poke-throw.730ee725d0b8cead4f6c.gif",
-    "static/media/slider-img.png": "/react-demo/static/media/slider-img.de63f2264c4b65f7e404.png",
-    "static/media/pokemon-card-bg.jpg": "/react-demo/static/media/pokemon-card-bg.058250c1108f553fecf1.jpg",
-    "static/media/404.jpg": "/react-demo/static/media/404.ea0ff67c5d709b830ead.jpg",
-    "static/media/pokeball.png": "/react-demo/static/media/pokeball.c85373b997500c76b389.png",
-    "static/media/500.jpg": "/react-demo/static/media/500.29118a528ed52db41383.jpg",
-    "static/media/loading.gif": "/react-demo/static/media/loading.ee1b7ad28fb2a8813a8d.gif",
-    "static/media/arrowback.jpg": "/react-demo/static/media/arrowback.f986d44c98e2ca7199ed.jpg",
-    "static/media/bag.png": "/react-demo/static/media/bag.62184fd1c23cb2afe81a.png",
-    "index.html": "/react-demo/index.html",
-    "main.b72a51cc.css.map": "/react-demo/static/css/main.b72a51cc.css.map",
-    "main.fe06588d.js.map": "/react-demo/static/js/main.fe06588d.js.map",
-    "787.28cb0dcd.chunk.js.map": "/react-demo/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/static/css/main.1c43c0f5.css",
+    "main.js": "/static/js/main.aae6aa66.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/poke-throw.gif": "/static/media/poke-throw.730ee725d0b8cead4f6c.gif",
+    "static/media/slider-img.png": "/static/media/slider-img.de63f2264c4b65f7e404.png",
+    "static/media/404.jpg": "/static/media/404.ea0ff67c5d709b830ead.jpg",
+    "static/media/pokeball.png": "/static/media/pokeball.c85373b997500c76b389.png",
+    "static/media/500.jpg": "/static/media/500.29118a528ed52db41383.jpg",
+    "static/media/loading.gif": "/static/media/loading.ee1b7ad28fb2a8813a8d.gif",
+    "static/media/arrowback.jpg": "/static/media/arrowback.f986d44c98e2ca7199ed.jpg",
+    "static/media/bag.png": "/static/media/bag.62184fd1c23cb2afe81a.png",
+    "index.html": "/index.html",
+    "main.1c43c0f5.css.map": "/static/css/main.1c43c0f5.css.map",
+    "main.aae6aa66.js.map": "/static/js/main.aae6aa66.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b72a51cc.css",
-    "static/js/main.fe06588d.js"
+    "static/css/main.1c43c0f5.css",
+    "static/js/main.aae6aa66.js"
   ]
 }
