@@ -32,9 +32,9 @@ const HomePage = () => {
   const nextPage = () => {
     setSearchParams({page: (page + 1).toString()});
   }
-  const renderList = listPokemon.map((item:any) => {
+  const renderList = listPokemon.map((item:string) => {
     return (
-      <div key={item.id} onClick={() => navigate(`pokemon/${item.id}`)}>
+      <div key={item} onClick={() => navigate(`pokemon/${item}`)}>
         <CardPokemon pokemon={item} />
       </div>
     )
