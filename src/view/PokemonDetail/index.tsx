@@ -100,69 +100,69 @@ const pokemonDetail = () => {
           </div>
         </div>
       )}
-      <img src={require("../../assets/img/arrowback.jpg")} className='btn-back' onClick={returnPage} />
-      <div>
-        <div className='header'>
-          {pokemon.name}
-        </div>
-        <div className='container'>
+      <div className='header'>
+        <img src={require("../../assets/img/arrowback.jpg")} className='btn-back' onClick={returnPage} />
+        {pokemon.name}
+      </div>
+      <div className='container'>
+        <div className='group-img'>
           <div className="card-img">
             <img src={pokemon.img || require("../../assets/img/who.png")} className="pokemon-img" />
-            <img src={require("../../assets/img/pokeball.png")} className="catch-btn" onClick={() => catchPoke()} />
           </div>
-          <div className="info">
-            <div className="type">
-              <div className="title">
-                Types:
-              </div>
-              {renderTypePokemon()}
+          <img src={require("../../assets/img/pokeball.png")} className="catch-btn" onClick={() => catchPoke()} />
+        </div>
+        <div className="info">
+          <div className="type">
+            <div className="title">
+              Types:
             </div>
-            <div className="abilitie">
-              <div className="title">
-                Abilities:
-              </div>
-              <div className="abilitie-item">
-                {renderAbilitiePokemon()}
-              </div>
+            {renderTypePokemon()}
+          </div>
+          <div className="abilitie">
+            <div className="title">
+              Abilities:
             </div>
-            <div className="move">
-              <div className="title">
-                Moves:  
-              </div> {renderMovePokemon()}
+            <div className="abilitie-item">
+              {renderAbilitiePokemon()}
             </div>
-            <div className="info__group-bmi">
-              <div className="bmi">
-                <span className="title-bmi">Weight:</span> {pokemon.weight}Kg
-              </div>
-              <div className="bmi">
-                <span className="title-bmi">Height:</span> {pokemon.height}m
-              </div>
+          </div>
+          <div className="move">
+            <div className="title">
+              Moves:  
+            </div> {renderMovePokemon()}
+          </div>
+          <div className="info__group-bmi">
+            <div className="bmi">
+              <span className="title-bmi">Weight:</span> {pokemon.weight}Kg
             </div>
-            <div className="info__group-stats">
-              <div className="stats">
-                <div className="title-stats">Hp: {pokemon.hp}</div>
-                <div className="stat-bar hp" style={{width: `${pokemon.hp*3}px`}}></div>
-              </div>
-              <div className="stats">
-                <div className="title-stats">Attack: {pokemon.attack}</div>
-                <div className="stat-bar attack" style={{width: `${pokemon.attack*3}px`}}></div>
-              </div>
-              <div className="stats">
-                <div className="title-stats">Defense: {pokemon.defense}</div>
-                <div className="stat-bar defense" style={{width: `${pokemon.defense*3}px`}}></div>
-              </div>
-              <div className="stats">
-                <div className="title-stats">Special-attack: {pokemon.sAttack}</div>
-                <div className="stat-bar s-attack" style={{width: `${pokemon.sAttack*3}px`}}></div>
-              </div>
-              <div className="stats">
-                <div className="title-stats">Special-defense: {pokemon.sDefense}</div>
-                <div className="stat-bar s-defense" style={{width: `${pokemon.sDefense*3}px`}}></div>
-              </div>
-              <div className="stats">
-                <div className="title-stats">Speed: {pokemon.speed}</div>
-                <div className="stat-bar speed" style={{width: `${pokemon.speed*3}px`}}></div>
-              </div>
+            <div className="bmi">
+              <span className="title-bmi">Height:</span> {pokemon.height}m
+            </div>
+          </div>
+          <div className="info__group-stats">
+            <div className="stats">
+              <div className="title-stats">Hp: {pokemon.hp}</div>
+              <div className="stat-bar hp" style={{width: `${pokemon.hp*3}px`}}></div>
+            </div>
+            <div className="stats">
+              <div className="title-stats">Attack: {pokemon.attack}</div>
+              <div className="stat-bar attack" style={{width: `${pokemon.attack*3}px`}}></div>
+            </div>
+            <div className="stats">
+              <div className="title-stats">Defense: {pokemon.defense}</div>
+              <div className="stat-bar defense" style={{width: `${pokemon.defense*3}px`}}></div>
+            </div>
+            <div className="stats">
+              <div className="title-stats">Special-attack: {pokemon.sAttack}</div>
+              <div className="stat-bar s-attack" style={{width: `${pokemon.sAttack*3}px`}}></div>
+            </div>
+            <div className="stats">
+              <div className="title-stats">Special-defense: {pokemon.sDefense}</div>
+              <div className="stat-bar s-defense" style={{width: `${pokemon.sDefense*3}px`}}></div>
+            </div>
+            <div className="stats">
+              <div className="title-stats">Speed: {pokemon.speed}</div>
+              <div className="stat-bar speed" style={{width: `${pokemon.speed*3}px`}}></div>
             </div>
           </div>
         </div>
