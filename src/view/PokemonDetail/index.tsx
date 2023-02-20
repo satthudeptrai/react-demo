@@ -70,7 +70,8 @@ const pokemonDetail = () => {
       id: pokemon.id,
       name: pokemon.name,
       img: pokemon.img,
-      nickName: nick
+      nickName: nick,
+      types: pokemon.types
     }
     const action = catchPokemon(formatPoke);
     dispatch(action);

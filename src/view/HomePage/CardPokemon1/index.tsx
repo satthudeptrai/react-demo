@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { async } from 'q';
 import { useEffect, useState } from 'react';
+import { COLOR } from '../../../helpers/constants';
 import './styles.scss';
 const initPokemonData = {
   id: 0,
@@ -18,6 +18,7 @@ const initPokemonData = {
   sDefense: 0,
   speed: 0,
 }
+
 const CardPokemon = (props:any) => {
   const [pokemon, setPokemon] = useState({...initPokemonData});
   useEffect(() => {
@@ -46,7 +47,10 @@ const CardPokemon = (props:any) => {
     });
   }
   return (
-    <div className={`card type-${pokemon.types[0]}`}>
+    <div
+      className={`card type-${pokemon.types[0]}`}
+      style={{backgroundImage: `linear-gradient(180deg, ${COLOR[pokemon.types[0]]}, ${pokemon.types[1] ? COLOR[pokemon.types[1]] : COLOR[pokemon.types[0]]})`}}
+    >
       <div className="card-header">
         <div className="id-number">
           #{pokemon.id}

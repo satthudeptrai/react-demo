@@ -23,7 +23,7 @@ export const setupAxios = () => {
     return response;
   }, function (error) {
     if (error?.response?.status !== 200) {
-      history.push('/error');
+      // history.push('/error');
     }
     // Bất kì mã trạng thái nào lọt ra ngoài tầm 2xx đều khiến hàm này được trigger\
     // Làm gì đó với lỗi response

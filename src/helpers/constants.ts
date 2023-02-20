@@ -1,1 +1,23 @@
 export const HEADER_TRACE_KEY = 'X-Correlation-Id';
+export const COLOR = {
+  normal: "#a4acaf",
+  fighting: "#d56723",
+  flying: "#00eefd",
+  poison: "#a040a0",
+  ground: "#e0c068",
+  rock: "#a38c21",
+  bug: "#729f3f",
+  ghost: "#7b62a3",
+  steel: "#9eb7b8",
+  fire: "#f08030",
+  water: "#3f51b5",
+  grass: "#9bcc50",
+  electric: "#f8d030",
+  psychic: "#f366b9",
+  ice: "#4592c4",
+  dragon: "#177258",
+  dark: "#707070",
+  fairy: "#fdb9e9",
+  unknown: "#fff",
+  shadow: "#646464",
+};

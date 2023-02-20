@@ -19,5 +19,6 @@ export interface MyPokemon {
   id: number,
   name: string,
   img: string,
-  nickName: string
+  nickName: string,
+  types: string[]
 }

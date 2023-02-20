@@ -18,7 +18,10 @@ const MyBag = () => {
   const renderListPokemon = () => {
     return listPokemon.map((item:any, index:number) => {
       return(
-        <div className="my-pokemon" style={{backgroundImage: `url(${item.img})`}} key={index}>
+        <div
+          className={`my-pokemon type-${item.types[0]}`}
+          style={{backgroundImage: `url(${item.img})`}}
+          key={index}>
           <button className="release-btn" disabled={indexChange !== -1} onClick={() => release(index)}>X</button>
           <div className="name-pokemon">
             {indexChange !== index ? (
