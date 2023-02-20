@@ -101,7 +101,7 @@ const pokemonDetail = () => {
         </div>
       )}
       <div className='header'>
-        <img src={require("../../assets/img/arrowback.jpg")} className='btn-back' onClick={returnPage} />
+        <img src={require("../../assets/img/arrowback.png")} className='btn-back' onClick={returnPage} />
         {pokemon.name}
       </div>
       <div className='container'>
@@ -142,27 +142,27 @@ const pokemonDetail = () => {
           <div className="info__group-stats">
             <div className="stats">
               <div className="title-stats">Hp: {pokemon.hp}</div>
-              <div className="stat-bar hp" style={{width: `${pokemon.hp*3}px`}}></div>
+              <div className="stat-bar hp" style={{width: `${pokemon.hp*2}px`}}></div>
             </div>
             <div className="stats">
               <div className="title-stats">Attack: {pokemon.attack}</div>
-              <div className="stat-bar attack" style={{width: `${pokemon.attack*3}px`}}></div>
+              <div className="stat-bar attack" style={{width: `${pokemon.attack*2}px`}}></div>
             </div>
             <div className="stats">
               <div className="title-stats">Defense: {pokemon.defense}</div>
-              <div className="stat-bar defense" style={{width: `${pokemon.defense*3}px`}}></div>
+              <div className="stat-bar defense" style={{width: `${pokemon.defense*2}px`}}></div>
             </div>
             <div className="stats">
               <div className="title-stats">Special-attack: {pokemon.sAttack}</div>
-              <div className="stat-bar s-attack" style={{width: `${pokemon.sAttack*3}px`}}></div>
+              <div className="stat-bar s-attack" style={{width: `${pokemon.sAttack*2}px`}}></div>
             </div>
             <div className="stats">
               <div className="title-stats">Special-defense: {pokemon.sDefense}</div>
-              <div className="stat-bar s-defense" style={{width: `${pokemon.sDefense*3}px`}}></div>
+              <div className="stat-bar s-defense" style={{width: `${pokemon.sDefense*2}px`}}></div>
             </div>
             <div className="stats">
               <div className="title-stats">Speed: {pokemon.speed}</div>
-              <div className="stat-bar speed" style={{width: `${pokemon.speed*3}px`}}></div>
+              <div className="stat-bar speed" style={{width: `${pokemon.speed*2}px`}}></div>
             </div>
           </div>
         </div>
