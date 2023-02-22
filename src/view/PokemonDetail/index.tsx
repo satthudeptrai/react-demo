@@ -47,9 +47,6 @@ const pokemonDetail = () => {
     })
   }
   const catchPoke = async () => {
-    setShowPopup(true);
-    setNick(pokemon.name);
-    return
     setShowCatch(true);
     setTimeout(() => {
       setShowCatch(false);
