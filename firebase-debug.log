@@ -1,0 +1,15 @@
+[debug] [2023-02-22T04:05:10.506Z] ----------------------------------------------------------------------
+[debug] [2023-02-22T04:05:10.508Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anhdn1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-02-22T04:05:10.509Z] CLI Version:   11.23.1
+[debug] [2023-02-22T04:05:10.509Z] Platform:      win32
+[debug] [2023-02-22T04:05:10.509Z] Node Version:  v16.17.1
+[debug] [2023-02-22T04:05:10.510Z] Time:          Wed Feb 22 2023 11:05:10 GMT+0700 (Indochina Time)
+[debug] [2023-02-22T04:05:10.510Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-22T04:05:10.514Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-02-22T04:05:10.590Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-22T04:05:10.591Z] > authorizing via signed-in user (01648794017a@gmail.com)
+[debug] [2023-02-22T04:05:10.591Z] [iam] checking project pocket-monster-22eb1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-02-22T04:05:10.592Z] > refreshing access token with scopes: []
+[debug] [2023-02-22T04:05:10.593Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-02-22T04:05:10.593Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
