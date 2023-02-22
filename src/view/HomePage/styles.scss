@@ -3,12 +3,16 @@ body {
   .home-page {
     .slide {
       text-align: center;
+      img {
+        max-width: 1024px;
+        width: 100%
+      }
     }
     .list-card {
       display: flex;
       flex-wrap: wrap;
       padding: 10px;
-      width: 1450px;
+      max-width: 1450px;
       margin: auto;
       .no-data {
         display: flex;
@@ -62,6 +66,22 @@ body {
         width: 1px;
         border-left: solid 1px #000;
         margin: 0 30px;
+      }
+    
+    }
+    @media only screen and (max-width: 1470px) {
+      .list-card {
+        max-width: 1160px;
+      }
+    }
+    @media only screen and (max-width: 1180px) {
+      .list-card {
+        max-width: 870px;
+      }
+    }
+    @media only screen and (max-width: 890px) {
+      .list-card {
+        max-width: 580px;
       }
     }
     @media only screen and (max-width: 600px) {
